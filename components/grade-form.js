@@ -7,8 +7,7 @@ class GradeForm {
     this.createGrade = createGrade;
   }
   handleSubmit(event){
-    event.preventDefault(){
-      console.log("hello from preventDefault() inside handleSubmit()")
+    event.preventDefault();
+      console.log("hello");
     }
   }
-}
