@@ -17,7 +17,7 @@ class App {
       success: function(response) {
         console.log(response);
       },
-      error: this.handleGetGradesError(),
+      error: this.handleGetGradesError,
       })
     }
     start() {
