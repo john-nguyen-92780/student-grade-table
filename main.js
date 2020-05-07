@@ -1,6 +1,6 @@
 var tableElement = document.querySelector("table");
 var newGradeTable = new GradeTable(tableElement);
-var header = document.querySelector("header");
-var newPageHeader = new PageHeader(header);
-var newApp = new App(newGradeTable);
+var headerElement = document.querySelector("header");
+var newPageHeader = new PageHeader(headerElement);
+var newApp = new App(newGradeTable, newPageHeader);
 newApp.start();
