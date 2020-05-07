@@ -32,10 +32,6 @@ form div {
   margin-bottom: 15px;
 }
 
-input {
-  border: 3px gray solid;
-}
-
 button {
   -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
   -moz-box-shadow:    5px 5px rgba(0, 0, 0, 0.3);
