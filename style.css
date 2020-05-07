@@ -1,0 +1,27 @@
+
+.table{
+border: 2px solid;
+}
+
+h3 {
+  align-items: center;
+}
+
+.table thead th {
+  height: 75px;
+}
+.table thead th:first-child {
+border-right: 2px solid;
+}
+
+.table thead th:nth-child(3) {
+  border-left: 2px solid;
+}
+
+.table tbody td:first-child {
+  border-right: 2px solid;
+}
+
+.table tbody td:nth-child(3) {
+  border-left: 2px solid;
+}
