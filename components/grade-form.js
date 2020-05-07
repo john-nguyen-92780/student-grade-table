@@ -9,8 +9,8 @@ class GradeForm {
   handleSubmit(event){
     event.preventDefault();
     var newFormData = FormData(event.target);
-    newFormData.get("name", "course", "grade");
-    this.createGrade("name", "course", "grade");
+    newFormData.get(name, course, grade);
+    this.createGrade(name, course, grade);
     event.target.reset();
   }
   }
