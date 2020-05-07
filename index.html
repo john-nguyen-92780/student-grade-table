@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 
 </head>
-<body class = "d-flex flex-wrap justify-content-center">
+
+<body class="d-flex flex-wrap justify-content-center">
   <header class="col-11">
     <div class="row">
       <div class="col-10">
-    <h1>Student Grade Table</h1>
-    </div>
-    <div class="col-2 d-flex justify-content-end align-items-center">
-    <h3>Average Grade <span class="badge badge-secondary">84</span></h3>
-    </div>
+        <h1>Student Grade Table</h1>
+      </div>
+      <div class="col-2 d-flex justify-content-end align-items-center">
+        <h3>Average Grade <span class="badge badge-secondary"></span></h3>
+      </div>
     </div>
   </header>
-  <table class="table table-striped col-11">
-    <thead class="thead-light">
-    <tr>
-      <th class="align-middle">Student Name</th>
-      <th class="align-middle">Student Course</th>
-      <th class="align-middle">Grade</th>
-    </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+      <table class="table table-striped col-8">
+        <thead class="thead-light">
+          <tr>
+            <th class="align-middle">Student Name</th>
+            <th class="align-middle">Student Course</th>
+            <th class="align-middle">Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+    </table>
+    <form class="col-3">
+      <div class="name-container">
+        <i class="fas fa-user fa-lg"></i>
+        <input type="text" class="form-control border border-secondary" id="name" name="name" placeholder="Name">
+      </div>
+      <div class="course-container">
+        <i class="fas fa-th-list fa-lg"></i>
+        <input type="text" class="form-control border border-secondary" id="course" name="course" placeholder="Course">
+      </div>
+      <div class="grade-container">
+        <i class="fas fa-user-graduate fa-lg"></i>
+        <input type="number" class="form-control border border-secondary" id="grade" name="grade" placeholder="Grade">
+      </div>
+      <div class="button-container">
+        <div class="col-7"></div>
+        <div class="col-5 d-flex justify-content-end p-0">
+          <button type="submit" class="btn btn-outline-dark mr-3">Add</button>
+          <button type="reset" class="btn btn-outline-dark">Cancel</button>
+        </div>
+
+      </div>
+      </div>
+    </form>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
   <script src="components/app.js"></script>
@@ -53,4 +79,5 @@
   <script src="main.js"></script>
 
 </body>
+
 </html>
