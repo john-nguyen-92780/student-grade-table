@@ -25,4 +25,26 @@ class GradeTable {
   onDeleteClick(deleteGrade) {
     this.deleteGrade();
   }
+  renderGradeRow(data, deleteGrade) {
+    var tbody = this.tableElement.querySelector("tbody");
+    for (var i = 0; i < data.length; i++) {
+      var newTr = document.createElement("tr");
+      var studentName = document.createElement("td");
+      var studentCourse = document.createElement("td");
+      var studentGrade = document.createElement("td");
+      var operationColumn = document.createElement("td");
+      var deleteButton = document.createElement("button");
+      var deleteButtonClickEventListener = deleteButton.addEventListener("click", this.deleteGrade(data[i].id));
+      studentName.textContent = data[i].name;
+      studentCourse.textContent = data[i].course;
+      studentGrade.textContent = data[i].grade;
+      deleteButton.textContent = "DELETE";
+      operationColumn.appendChild(deleteButton);
+      newTr.appendChild(studentName);
+      newTr.appendChild(studentCourse);
+      newTr.appendChild(studentGrade);
+      newTr.appendChild(operationColumn);
+      return newTr;
+    }
+  }
 }
