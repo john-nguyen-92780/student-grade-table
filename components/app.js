@@ -31,15 +31,29 @@ class App {
     })
   }
   start() {
+    this.gradeForm.onSubmit(this.createGrade);
     this.getGrades;
   }
   createGrade(name, course, grade){
     console.log(name + "s course: " + course + ", and course grade: " + grade + ".");
+    $.ajax({
+      method: "POST",
+      url: "https://sgt.lfzprototypes.com/api/grades",
+      headers: { "X-Access-Token": "2HaPoWNJ" },
+      data: {
+        "name": name,
+        "course": course,
+        "grade": grade
+      },
+      success: this.handleCreateGradeSuccess,
+      error: this.handleCreateGradeError,
+    })
   }
   handleCreateGradeError(error) {
     console.error(error);
   }
   handleCreateGradeSuccess() {
     this.getGrades;
+    console.log("success");
   }
 }
