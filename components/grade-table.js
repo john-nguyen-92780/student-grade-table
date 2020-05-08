@@ -19,6 +19,7 @@ class GradeTable {
       newTr.appendChild(studentGrade);
       newTr.appendChild(operationColumn);
       tbody.appendChild(newTr);
+      this.renderGradeRow(this.deleteGrade);
     }
     console.log("get grades");
   }
