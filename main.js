@@ -1,5 +1,6 @@
 var tableElement = document.querySelector("table");
-var newGradeTable = new GradeTable(tableElement);
+var noGradesElement = document.getElementById("grades-notifier");
+var newGradeTable = new GradeTable(tableElement, noGradesElement);
 var headerElement = document.querySelector("header");
 var newPageHeader = new PageHeader(headerElement);
 var gradeFormElement = document.querySelector("form");
