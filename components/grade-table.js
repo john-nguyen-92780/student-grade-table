@@ -10,12 +10,14 @@ class GradeTable {
       var studentName = document.createElement("td");
       var studentCourse = document.createElement("td");
       var studentGrade = document.createElement("td");
+      var operationColumn = document.createElement("td");
       studentName.textContent = grades[i].name;
       studentCourse.textContent = grades[i].course;
       studentGrade.textContent = grades[i].grade;
       newTr.appendChild(studentName);
       newTr.appendChild(studentCourse);
       newTr.appendChild(studentGrade);
+      newTr.appendChild(operationColumn);
       tbody.appendChild(newTr);
     }
     console.log("get grades");
