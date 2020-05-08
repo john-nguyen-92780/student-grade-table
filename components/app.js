@@ -48,10 +48,19 @@ class App {
       success: this.handleCreateGradeSuccess,
       error: this.handleCreateGradeError,
     })}
-  handleCreateGradeError(error) {
+  handleCreateGradeError(error){
     console.log(error);
   }
-  handleCreateGradeSuccess() {
+  handleCreateGradeSuccess(){
+    this.getGrades();
+  }
+  deleteGrade(id){
+    console.log(id);
+  }
+  handleDeleteGradeError(error){
+    console.error(error);
+  }
+  handleDeleteGradeSuccess(){
     this.getGrades();
   }
 }
