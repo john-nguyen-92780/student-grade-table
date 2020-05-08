@@ -25,3 +25,21 @@ border-right: 2px solid;
 .table tbody td:nth-child(3) {
   border-left: 2px solid;
 }
+
+form div {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+button {
+  -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow:         5px 5px rgba(0, 0, 0, 0.3);
+}
+i {
+  padding: 10px;
+  color: black;
+  min-width: 50px;
+  text-align: center;
+}

@@ -18,5 +18,6 @@ class GradeTable {
       newTr.appendChild(studentGrade);
       tbody.appendChild(newTr);
     }
+    console.log("get grades");
   }
 }
