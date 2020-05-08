@@ -22,4 +22,7 @@ class GradeTable {
     }
     console.log("get grades");
   }
+  onDeleteClick(deleteGrade) {
+    this.deleteGrade();
+  }
 }
