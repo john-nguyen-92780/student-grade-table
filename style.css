@@ -45,6 +45,12 @@ button {
   -moz-box-shadow:    5px 5px rgba(0, 0, 0, 0.3);
   box-shadow:         5px 5px rgba(0, 0, 0, 0.3);
 }
+
+/* button:active {
+  outline:0;
+} */
+
+
 i {
   padding: 10px;
   color: black;

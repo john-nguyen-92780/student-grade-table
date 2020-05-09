@@ -9,7 +9,6 @@ class GradeTable {
     for (var i = 0; i < grades.length; i++) {
       tbody.append(this.renderGradeRow(grades[i], this.deleteGrade));
     }
-    console.log("get grades");
     if (grades) {
       noGradesElement.classList.add("d-none");
     } else {
