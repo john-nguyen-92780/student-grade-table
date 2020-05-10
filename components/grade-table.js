@@ -11,7 +11,6 @@ class GradeTable {
     }
     if (grades.length === 0) {
       this.noGradesElement.classList.remove("d-none");
-      document.querySelector("span.badge").textContent = "--";
     } else {
       this.noGradesElement.classList.add("d-none");
 
@@ -33,7 +32,7 @@ class GradeTable {
       studentGrade.textContent = data.grade;
       deleteButton.textContent = "DELETE";
       deleteButton.classList.add("btn");
-      deleteButton.classList.add("btn-outline-dark");
+      deleteButton.classList.add("btn-danger");
       operationColumn.appendChild(deleteButton);
       newTr.appendChild(studentName);
       newTr.appendChild(studentCourse);

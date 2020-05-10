@@ -75,5 +75,10 @@ i {
   position: absolute;
   color: red;
   font-weight: bold;
-  top: 15px;
+  top: 141px;
+  left: 94px;
+}
+
+button[type="submit"] {
+  color: white;
 }
