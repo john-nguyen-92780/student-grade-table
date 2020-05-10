@@ -9,17 +9,30 @@ h3 {
 
 .table thead th {
   height: 75px;
+
 }
 .table thead th:first-child {
-border-right: 2px solid;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+
+}
+
+.table thead th:nth-child(2) {
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+
 }
 
 .table thead th:nth-child(3) {
   border-left: 2px solid;
+  border-bottom: 2px solid;
+
 }
 
 .table thead th:nth-child(4) {
   border-left: 2px solid;
+  border-bottom: 2px solid;
+
 }
 
 .table tbody td:first-child {
@@ -46,9 +59,9 @@ button {
   box-shadow:         5px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* button:active {
-  outline:0;
-} */
+.btn:focus {
+  transition-duration: .05s;
+}
 
 
 i {
@@ -56,4 +69,11 @@ i {
   color: black;
   min-width: 50px;
   text-align: center;
+}
+
+#grades-notifier {
+  position: absolute;
+  color: red;
+  font-weight: bold;
+  top: 15px;
 }

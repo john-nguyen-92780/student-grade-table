@@ -9,10 +9,12 @@ class GradeTable {
     for (var i = 0; i < grades.length; i++) {
       tbody.append(this.renderGradeRow(grades[i], this.deleteGrade));
     }
-    if (grades) {
-      noGradesElement.classList.add("d-none");
+    if (grades.length === 0) {
+      this.noGradesElement.classList.remove("d-none");
+      document.querySelector("span.badge").textContent = "--";
     } else {
-      noGradesElement.classList.remove("d-none");
+      this.noGradesElement.classList.add("d-none");
+
     }
   }
   onDeleteClick(deleteGrade) {
