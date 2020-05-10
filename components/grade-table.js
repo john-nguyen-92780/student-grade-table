@@ -1,23 +1,44 @@
 class GradeTable {
-  constructor(tableElement){
+  constructor(tableElement, noGradesElement){
     this.tableElement = tableElement;
+    this.noGradesElement = noGradesElement;
   }
   updateGrades(grades) {
     var tbody = this.tableElement.querySelector("tbody");
-    tbody.innerHTML = "";
+    tbody.textContent = "";
     for (var i = 0; i < grades.length; i++) {
+      tbody.append(this.renderGradeRow(grades[i], this.deleteGrade));
+    }
+    if (grades.length === 0) {
+      this.noGradesElement.classList.remove("d-none");
+      document.querySelector("span.badge").textContent = "--";
+    } else {
+      this.noGradesElement.classList.add("d-none");
+
+    }
+  }
+  onDeleteClick(deleteGrade) {
+    this.deleteGrade = deleteGrade;
+  }
+  renderGradeRow(data, deleteGrade) {
       var newTr = document.createElement("tr");
       var studentName = document.createElement("td");
       var studentCourse = document.createElement("td");
       var studentGrade = document.createElement("td");
-      studentName.textContent = grades[i].name;
-      studentCourse.textContent = grades[i].course;
-      studentGrade.textContent = grades[i].grade;
+      var operationColumn = document.createElement("td");
+      var deleteButton = document.createElement("button");
+      deleteButton.addEventListener("click", function (event) {deleteGrade(data.id); })
+      studentName.textContent = data.name;
+      studentCourse.textContent = data.course;
+      studentGrade.textContent = data.grade;
+      deleteButton.textContent = "DELETE";
+      deleteButton.classList.add("btn");
+      deleteButton.classList.add("btn-outline-dark");
+      operationColumn.appendChild(deleteButton);
       newTr.appendChild(studentName);
       newTr.appendChild(studentCourse);
       newTr.appendChild(studentGrade);
-      tbody.appendChild(newTr);
-    }
-    console.log("get grades");
+      newTr.appendChild(operationColumn);
+      return newTr;
   }
-}
+  }
