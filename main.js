@@ -7,4 +7,4 @@ var gradeFormElement = document.querySelector("form");
 var newGradeForm = new GradeForm(gradeFormElement);
 var newApp = new App(newGradeTable, newPageHeader, newGradeForm);
 newApp.start();
-$('.btn').mouseup(function () { this.blur() }) //to remove focus from button after click
+$('.btn').mouseup(function () { this.blur() }); //to remove focus from button after click

@@ -22,6 +22,9 @@ class App {
       addedStudentGrades += grades[i].grade;
     }
     var newAverage = addedStudentGrades / grades.length;
+    if (grades.length === 0) {
+      newAverage = "N/A";
+    }
     this.pageHeader.updateAverage(newAverage);
   }
   getGrades() {
