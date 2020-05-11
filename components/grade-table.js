@@ -36,6 +36,7 @@ class GradeTable {
       studentGrade.classList.add("align-middle");
       deleteButton.classList.add("btn");
       deleteButton.classList.add("btn-danger");
+      operationColumn.classList.add("text-right");
       operationColumn.appendChild(deleteButton);
       newTr.appendChild(studentName);
       newTr.appendChild(studentCourse);

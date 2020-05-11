@@ -3,6 +3,11 @@
 border: 2px solid;
 } */
 
+html {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
 h3 {
   align-items: center;
 }
@@ -47,12 +52,10 @@ h3 {
   border-left: 2px solid;
 } */
 
-.table-container {
+.table-container, .form-container {
   margin: 0 auto;
 }
-.container {
-  margin: 0 auto;
-}
+
 
 form div {
   display: flex;
@@ -100,11 +103,8 @@ button[type="submit"] {
 /* Desktop */
 @media screen
   and (min-device-width: 1200px)
-  and (max-device-width: 1900px)
+  and (max-device-width: 1500px)
   and (-webkit-min-device-pixel-ratio: 1) {
-  #badge {
-  text-align: right;
-    }
 }
 
 /* iPad Pro 12.9 Landscape
@@ -169,9 +169,8 @@ button[type="submit"] {
 }
 } */
 
-/* iphone 6, 7, 8 Portrait */
 @media only screen
-  and (min-device-width: 500px) {
+  and (min-device-width: 900px) {
 
     .title {
       text-align: center;
@@ -184,4 +183,25 @@ button[type="submit"] {
     button {
       text-align: right;
     }
+
+    col-xs-12 {
+      width: 50%;
+    }
+  }
+
+@media only screen
+  and (min-device-width: 700px) {
+
+    .title {
+      text-align: center;
+    }
+
+    #badge {
+      text-align: center;
+    }
+
+    button {
+      text-align: right;
+    }
+
   }
