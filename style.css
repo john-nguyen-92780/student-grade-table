@@ -47,6 +47,13 @@ h3 {
   border-left: 2px solid;
 } */
 
+.table-container {
+  margin: 0 auto;
+}
+.container {
+  margin: 0 auto;
+}
+
 form div {
   display: flex;
   width: 100%;
@@ -83,71 +90,22 @@ button[type="submit"] {
   color: white;
 }
 
-header {
-  margin: 0 auto;
+.row {
+  margin: 0px;
 }
 
 .table-container {
   margin: 0 auto;
 }
-/* Desktop
+/* Desktop */
 @media screen
   and (min-device-width: 1200px)
   and (max-device-width: 1900px)
   and (-webkit-min-device-pixel-ratio: 1) {
-    .col-1 {
-  width: 8%;
-  }
-
-  .col-2 {
-    width: 16%;
-  }
-
-  .col-3 {
-    width: 24%;
-  }
-
-  .col-4 {
-    width: 32%;
-  }
-
-  .col-5 {
-    width: 40%;
-  }
-
-  .col-6 {
-    width: 48%;
-  }
-
-  .col-7 {
-    width: 56%;
-  }
-
-  .col-8 {
-    width: 64%;
-  }
-
-  .col-9 {
-    width: 72%;
-  }
-
-  .col-10 {
-    width: 80%;
-  }
-
-  .col-11 {
-    width: 88%;
-  }
-
-  .col-12 {
-    width: 96%;
-  }
-
-  [class*="row"] {
-  width: 100%;
-  margin-bottom: .5rem;
-  }
-} */
+  #badge {
+  text-align: right;
+    }
+}
 
 /* iPad Pro 12.9 Landscape
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
@@ -213,27 +171,17 @@ header {
 
 /* iphone 6, 7, 8 Portrait */
 @media only screen
-  and (min-device-width: 375px)
-  and (max-device-width: 667px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-  h1 {
-    font-size: 10vw;
+  and (min-device-width: 500px) {
+
+    .title {
+      text-align: center;
+    }
+
+    #badge {
+      text-align: center;
+    }
+
+    button {
+      text-align: right;
+    }
   }
-  #badge {
-    display: flex;
-    justify-content: center;
-  }
-  .col-xs-1 {width: 100%;}
-  .col-xs-2 {width: 100%;}
-  .col-xs-3 {width: 100%;}
-  .col-xs-4 {width: 100%;}
-  .col-xs-5 {width: 100%;}
-  .col-xs-6 {width: 100%;}
-  .col-xs-7 {width: 100%;}
-  .col-xs-8 {width: 100%;}
-  .col-xs-9 {width: 100%;}
-  .col-xs-10 {width: 100%;}
-  .col-xs-11 {width: 100%;}
-  .col-xs-12 {width: 100%;}
-}

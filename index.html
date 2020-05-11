@@ -12,16 +12,17 @@
 </head>
 
 <body>
-  <header class="d-flex justify-content-between col-11">
-      <div class="col-3">
+  <header class="row col-12">
+      <div class="title col-xl-3 col-xs-12">
         <h1>Student Grade Table</h1>
       </div>
-      <div class="col-2" id="badge">
+      <div class="col-xl-7"></div>
+      <div class="col-xl-2 col-xs-12 text-xl-right" id="badge">
         <h3>Average Grade <span class="badge badge-secondary">N/A</span></h3>
       </div>
   </header>
-  <div class="table-container col-11 d-flex justify-content-center">
-  <div class="container col-9">
+  <div class="row">
+  <div class="table-container col-xl-9 col-xs-12">
       <table class="table table-striped">
         <thead class="thead-light">
           <tr>
@@ -36,27 +37,29 @@
     </table>
     <p id="grades-notifier">No Grades Recorded</p>
   </div>
-    <form class="col-3">
+  <div class="form-container col-xl-3 col-xs-12">
+    <form>
+      <h2>Add Grade</h2>
       <div class="name-container">
-        <i class="fas fa-user fa-lg"></i>
-        <input type="text" class="form-control border border-secondary" id="name" name="name" placeholder="Name">
+        <i class="fas fa-user fa-lg border border-secondary rounded bg-light"></i>
+        <input type="text" class="form-control border border-secondary rounded" id="name" name="name" placeholder="Name">
       </div>
       <div class="course-container">
-        <i class="fas fa-th-list fa-lg"></i>
+        <i class="fas fa-th-list fa-lg border border-secondary rounded bg-light"></i>
         <input type="text" class="form-control border border-secondary" id="course" name="course" placeholder="Course">
       </div>
       <div class="grade-container">
-        <i class="fas fa-user-graduate fa-lg"></i>
+        <i class="fas fa-user-graduate fa-lg border border-secondary rounded bg-light"></i>
         <input type="number" class="form-control border border-secondary" id="grade" name="grade" placeholder="Grade">
       </div>
-      <div class="button-container">
-        <div class="col-xl-7"></div>
+      <div class="button-container no-gutters">
         <div class="col-xl-5">
           <button type="submit" class="btn btn-success mr-3">Add</button>
           <button type="reset" class="btn btn-outline-dark">Cancel</button>
         </div>
       </div>
     </form>
+  </div>
   </div>
 
 
