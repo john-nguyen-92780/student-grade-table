@@ -31,6 +31,9 @@ class GradeTable {
       studentCourse.textContent = data.course;
       studentGrade.textContent = data.grade;
       deleteButton.textContent = "DELETE";
+      studentName.classList.add("align-middle");
+      studentCourse.classList.add("align-middle");
+      studentGrade.classList.add("align-middle");
       deleteButton.classList.add("btn");
       deleteButton.classList.add("btn-danger");
       operationColumn.appendChild(deleteButton);
