@@ -1,7 +1,7 @@
-
+/*
 .table{
 border: 2px solid;
-}
+} */
 
 h3 {
   align-items: center;
@@ -11,7 +11,7 @@ h3 {
   height: 75px;
 
 }
-.table thead th:first-child {
+/* .table thead th:first-child {
   border-right: 2px solid;
   border-bottom: 2px solid;
 
@@ -45,7 +45,7 @@ h3 {
 
 .table tbody td:nth-child(4) {
   border-left: 2px solid;
-}
+} */
 
 form div {
   display: flex;
@@ -72,13 +72,168 @@ i {
 }
 
 #grades-notifier {
-  position: absolute;
+  /* position: absolute; */
   color: red;
   font-weight: bold;
-  top: 141px;
-  left: 94px;
+  /* top: 141px;
+  left: 94px; */
 }
 
 button[type="submit"] {
   color: white;
+}
+
+header {
+  margin: 0 auto;
+}
+
+.table-container {
+  margin: 0 auto;
+}
+/* Desktop
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1900px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .col-1 {
+  width: 8%;
+  }
+
+  .col-2 {
+    width: 16%;
+  }
+
+  .col-3 {
+    width: 24%;
+  }
+
+  .col-4 {
+    width: 32%;
+  }
+
+  .col-5 {
+    width: 40%;
+  }
+
+  .col-6 {
+    width: 48%;
+  }
+
+  .col-7 {
+    width: 56%;
+  }
+
+  .col-8 {
+    width: 64%;
+  }
+
+  .col-9 {
+    width: 72%;
+  }
+
+  .col-10 {
+    width: 80%;
+  }
+
+  .col-11 {
+    width: 88%;
+  }
+
+  .col-12 {
+    width: 96%;
+  }
+
+  [class*="row"] {
+  width: 100%;
+  margin-bottom: .5rem;
+  }
+} */
+
+/* iPad Pro 12.9 Landscape
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* @media only screen
+  and (min-device-width: 1366px)
+  and (max-device-width: 1366px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+} */
+
+/* iPad Pro 12.9 Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+/* @media only screen
+  and (min-device-width: 1024px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+} */
+
+/* iPad Landscape */
+/* @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+} */
+
+/* iPad Portrait */
+/* @media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (-webkit-min-device-pixel-ratio: 1) { */
+  /* .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;} */
+/* } */
+
+/* iPhone 6, 7, 8 Landscape
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+[class*="col-"] {
+  width: 100%;
+}
+} */
+
+/* iphone 6, 7, 8 Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+  h1 {
+    font-size: 10vw;
+  }
+  #badge {
+    display: flex;
+    justify-content: center;
+  }
+  .col-xs-1 {width: 100%;}
+  .col-xs-2 {width: 100%;}
+  .col-xs-3 {width: 100%;}
+  .col-xs-4 {width: 100%;}
+  .col-xs-5 {width: 100%;}
+  .col-xs-6 {width: 100%;}
+  .col-xs-7 {width: 100%;}
+  .col-xs-8 {width: 100%;}
+  .col-xs-9 {width: 100%;}
+  .col-xs-10 {width: 100%;}
+  .col-xs-11 {width: 100%;}
+  .col-xs-12 {width: 100%;}
 }
